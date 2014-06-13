@@ -1,0 +1,37 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#wrapper {
+    margin: 0px auto;
+    
+    width: 100%;
+    height: 100%;
+}
+#topImageContainer {
+    position:absolute;
+    width:100%;
+    height: 100%;
+    z-index:0;
+}
+
+#bottomImageContainer {
+    position:absolute;
+    width:100%;
+    height: 100%;
+    z-index:1;
+}
+
+#btnOpenSiteContainer {
+    position: absolute;
+    background: transparent;
+    border: 0px solid black;
+    width: 100%;
+    height:100%;
+    z-index: 30;
+    
+  
+}
