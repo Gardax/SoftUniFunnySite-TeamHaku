@@ -12,7 +12,8 @@ function openTheSite() {
         var bottomElementHeight = $("#bottomImageContainer").height();
         $("#topImageContainer").animate({ top: -topElementHeight * 0.4, opacity: "show" }, 1500);
         $("#bottomImageContainer").animate({ top: bottomElementHeight* 0.45, opacity: "show" }, 1500, function () {
-            
+            $("#startScreen").css("display", "none");
+            $("#siteBody").css("display", "block");
         });
         
     });

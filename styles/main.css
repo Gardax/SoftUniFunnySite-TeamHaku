@@ -5,24 +5,28 @@
     height: 100%;
     overflow: hidden;
 }
+
 #wrapper {
     margin: 0px auto;
-    
     width: 100%;
     height: 100%;
 }
+
 #topImageContainer {
-    position:absolute;
-    width:100%;
+    position: absolute;
+    width: 100%;
     height: 100%;
-    z-index:0;
+    z-index: 0;
 }
 
 #bottomImageContainer {
-    position:absolute;
-    width:100%;
+    position: absolute;
+    width: 100%;
     height: 100%;
-    z-index:1;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom left;
 }
 
 #btnOpenSiteContainer {
@@ -30,8 +34,98 @@
     background: transparent;
     border: 0px solid black;
     width: 100%;
-    height:100%;
+    height: 100%;
     z-index: 30;
+}
+
+#siteBody {
+    display: none;
+}
+
+header {
+    width: 100%;
+   
+}
+
+    header img {
+        width: 100%;
+        height: 130px;
+    }
+
+    header #logo {
+        height: 80px;
+        width: 220px;
+        position: absolute;
+        top: 1%;
+        left: 2%;
+    }
+
+nav {
     
-  
+    float: right;
+    text-align: right;
+    width: 80%;
+    margin-top: -67px;
+    font-size: 1.4em;
+}
+    nav ul {
+        float: right;
+        text-align: right;
+        width: 100%;
+    }
+    nav li {
+        float: right;
+        width: 18%;
+        color: white;   
+        background: rgb(0, 40, 40);
+        background: -moz-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+        background: -webkit-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+        background: -o-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+        background: -ms-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+        background: linear-gradient(90deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+        padding: 5px;
+    }
+
+main {
+    
+}
+
+section {
+    float: left;
+    width: 70%;
+    padding: 20px 0px 0px 4%;
+}
+    section div {
+        border: 2px solid;
+        height: 150px;
+        margin-bottom: 40px;
+    }
+aside {
+    float: left;
+    width: 20%;
+    margin-left: 4%;
+    border: 2px solid;
+    height: 400px;
+}
+
+footer {
+    width: 100%;
+   
+}
+
+    footer img {
+       width: 100%;
+       height: 110px;
+    }
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width:850px) {
+    header #logo {
+        height: auto;
+        width: 70px;
+        content: url('../images/Layout Design/Header/Logo.png');
+    }
 }
