@@ -47,18 +47,20 @@ header {
    
 }
 
-    header img {
-        width: 100%;
-        height: 130px;
-    }
+header img {
+    border: 0;
+    display: block;
+    width: 100%;
+    height: 130px;
+}
 
-    header #logo {
-        height: 80px;
-        width: 220px;
-        position: absolute;
-        top: 1%;
-        left: 2%;
-    }
+header #logo {
+    height: 80px;
+    width: 220px;
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
 
 nav {
     
@@ -68,25 +70,25 @@ nav {
     margin-top: -67px;
     font-size: 1.4em;
 }
-    nav ul {
-        float: right;
-        text-align: right;
-        width: 100%;
-    }
-    nav li {
-        float: right;
-        width: 18%;
-        height: 26px;
-        color: white;   
-        background: rgb(0, 40, 40);
-        background: -moz-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
-        background: -webkit-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
-        background: -o-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
-        background: -ms-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
-        background: linear-gradient(90deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
-        padding: 5px;
-        
-    }   
+nav ul {
+    float: right;
+    text-align: right;
+    width: 100%;
+    position: relative;
+}
+nav li {
+    float: right;
+    width: 18%;
+    height: 26px;
+    color: white;   
+    background: rgb(0, 40, 40);
+    background: -moz-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+    background: -o-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+    background: -ms-linear-gradient(0deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+    background: linear-gradient(90deg, rgb(0, 40, 40) 0%, rgb(0, 132, 132) 100%);
+    padding: 5px;   
+}   
 
 main {
     
@@ -97,11 +99,13 @@ section {
     width: 70%;
     padding: 20px 0px 0px 4%;
 }
-    section div {
-        border: 2px solid;
-        height: 150px;
-        margin-bottom: 40px;
-    }
+
+section div {
+    border: 2px solid;
+    height: 150px;
+    margin-bottom: 40px;
+}
+
 aside {
     float: left;
     width: 20%;
@@ -115,10 +119,10 @@ footer {
    
 }
 
-    footer img {
-       width: 100%;
-       height: 110px;
-    }
+footer img {
+   width: 100%;
+   height: 110px;
+}
 
 .clear {
     clear: both;
@@ -138,3 +142,8 @@ footer {
     }
 }
 
+a {
+    text-decoration: none;
+    background-color: none;
+    color: white;
+}
