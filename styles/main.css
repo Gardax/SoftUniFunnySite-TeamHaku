@@ -2,14 +2,13 @@
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 
 #wrapper {
     margin: 0px auto;
     width: 100%;
-    height: 100%;
+    overflow: hidden;
 }
 
 #topImageContainer {
@@ -91,7 +90,6 @@ nav li {
 }   
 
 main {
-    
 }
 
 section {
@@ -100,18 +98,12 @@ section {
     padding: 20px 0px 0px 4%;
 }
 
-section div {
-    border: 2px solid;
-    height: 150px;
-    margin-bottom: 40px;
-}
-
 aside {
     float: left;
     width: 20%;
     margin-left: 4%;
     border: 2px solid;
-    height: 400px;
+    
 }
 
 footer {
@@ -146,4 +138,84 @@ a {
     text-decoration: none;
     background-color: none;
     color: white;
+}
+ 
+/*video page*/
+ 
+#videos{
+    
+}
+ 
+#galleryHeader{
+    background-color: #000;
+    color: #FFF;
+    padding-left: 5%;
+}
+ 
+#galleryHeader h1{
+    margin-top: 0px;   
+}
+ 
+#slider{
+    
+    border: none;
+   // margin-top: -2%;
+}
+ 
+#slider img{
+    float: left;
+}
+ 
+#slider p{
+    margin: 40px 0px 0px 20px;
+    color: #000;
+    padding-left: 20px;
+}
+ 
+#left-video{
+    float: left;
+    margin: 1%;
+    border:none;
+    background-color: #000;
+    box-shadow: 5px 5px 5px #888888;
+}
+ 
+.center-right-video{
+    float: right;
+    margin: 1%;
+    border: none;
+    background-color: #000;
+    box-shadow: 5px 5px 5px #888888;
+}
+ 
+#embed{
+   
+}
+ 
+#embed p{
+    text-align: center;
+    color: #FFF;
+}
+ 
+#best-videos {
+    float: left;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    border: 2px solid;
+    text-align: center;
+    background-color: #FE0000;
+}
+ 
+.aside-videos{
+    margin-left: 4%;
+    margin-top: 4%;
+    box-shadow: 5px 5px 5px #888888;
+}
+ 
+#best-videos p{
+    background-color: #000;   
+    color: #FFF;
+    margin-left: 1%;
+    margin-right: 1%;
 }

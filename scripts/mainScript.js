@@ -1,8 +1,10 @@
 
-$(document).ready(attachEvents);
+$(document).ready(init);
 
-function attachEvents() {
+function init() {
     openTheSite();
+    attachEvents();
+    $("main").load("bloopers.html");
 }
 
 function openTheSite() {
@@ -14,7 +16,14 @@ function openTheSite() {
         $("#bottomImageContainer").animate({ top: bottomElementHeight* 0.45, opacity: "show" }, 1500, function () {
             $("#startScreen").css("display", "none");
             $("#siteBody").css("display", "block");
+            $("body").css("overflow", "scroll");
         });
         
+    });
+}
+
+function attachEvents() {
+    $("#openVideos").on("click", function () {
+        $("main").load("videos.html");
     });
 }
