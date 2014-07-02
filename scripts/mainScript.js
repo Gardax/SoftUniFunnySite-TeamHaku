@@ -25,16 +25,23 @@ function openTheSite() {
 function attachEvents() {
     $("#openVideos").on("click", function () {
         $("main").load("videos.html");
+        $("nav li").removeClass("selectedItem");
+        $("#openVideos").addClass("selectedItem");
     });
     $("#openMusic").on("click", function () {
+        $("nav li").removeClass("selectedItem");
+        $("#openMusic").addClass("selectedItem");
         $("main").load("music.html");
     });
 
     $("#openIndex").on("click", function () {
+        $("nav li").removeClass("selectedItem");
         $("main").load("indexContent.html");
     });
 
     $("#openBloopers").on("click", function () {
+        $("nav li").removeClass("selectedItem");
+        $("#openBloopers").addClass("selectedItem");
         $("main").load("bloopers.html");
     });
 }

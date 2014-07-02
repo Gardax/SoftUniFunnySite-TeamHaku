@@ -96,6 +96,18 @@ nav {
         cursor: pointer;
     }
 
+        nav li:before {
+            content: url('../images/Layout Design/Navigation Buttons/Nav_button_off.png');
+            float: left;
+            height: 100%;
+            position:relative;
+            top: 8px;
+        }
+
+        nav .selectedItem:before {
+            content: url('../images/Layout Design/Navigation Buttons/Nav_button_on.png');
+        }
+
 main {
 }
 
@@ -137,6 +149,10 @@ footer {
         font-size: 0.8em;
         height: 21px;
     }
+
+    nav li:before {
+            top: 4px;
+        }
 }
 
 @media only screen and (max-width:650px) {
@@ -166,6 +182,11 @@ footer {
         padding: 10px 5px 10px 5px;
         margin-top: 5px;
     }
+
+     nav li:before {
+            top: 5px;
+        }
+
 }
 
 a {
