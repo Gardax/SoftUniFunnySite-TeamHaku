@@ -155,6 +155,18 @@ footer {
         margin-left:1px;
     }
 
+    footer #validators {
+        position: relative;
+        float: left;
+        top: 110px;
+        left: 2%;
+        z-index: 1000;
+    }
+
+        footer #validators img {
+            width: 80px;
+            height:auto;
+        }
 .clear {
     clear: both;
 }
@@ -397,6 +409,7 @@ a {
     }
 
 #musicSection .text {
+    //margin-top: -40px;
     width: 70%;
     float: left;
 }
@@ -418,7 +431,7 @@ a {
 
 #musicSection #nextButton button{
     position: relative;
-    top: 60px;
+    top: 50px;
     background: none;
     padding: 5px;
     border: 0px;
