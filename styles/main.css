@@ -344,3 +344,32 @@ a {
     .title h1 {
         padding: 0px;
     }
+
+/*Bloopers Page*/
+
+#bloopersContent {
+    text-align:center;
+}
+
+#bloopersContent .singleBlooper{
+    text-align:center;
+}
+
+#bloopersContent h1 {
+    text-align:left;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+}
+
+#bloopersContent img {
+    width: 100%;
+    
+}
+
+#bloopersContent .image{
+    max-width:600px;
+    margin: 0px auto;
+    border-bottom: 1px solid #b8b8b8;
+    padding: 10px;
+}

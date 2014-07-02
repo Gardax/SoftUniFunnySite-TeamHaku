@@ -33,4 +33,8 @@ function attachEvents() {
     $("#openIndex").on("click", function () {
         $("main").load("indexContent.html");
     });
+
+    $("#openBloopers").on("click", function () {
+        $("main").load("bloopers.html");
+    });
 }
