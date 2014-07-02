@@ -439,8 +439,9 @@ a {
     padding: 10px;
 }
 
+/*pictures page*/
 #picturesDivWrapper {
-	width: 900px;
+	width: 70%;
 	margin: 20px 35px 20px 35px;
 	-webkit-box-shadow: 6px 7px 0px -4px rgba(57,57,57,1);
 	-moz-box-shadow: 6px 7px 0px -4px rgba(57,57,57,1);
@@ -468,7 +469,7 @@ a {
 	}
 
 #picturesAsideWrapper {
-	width: 300px;
+	width: 20%;
 	height: 780px;
 	margin: 20px 35px 20px 0;
 	-webkit-box-shadow: 6px 7px 0px -4px rgba(57,57,57,1);
@@ -487,7 +488,7 @@ a {
 		margin-bottom: 15px;
 	}
 	#picturesAsideContent {
-		width: 270px;
+		width: 90%;
 		height: 100px;
 		margin: 0 10px 20px 10px;
 		border: 2px solid black;
@@ -495,3 +496,13 @@ a {
 		border-top: 3px solid black;
 		border-top-right-radius: 10px;
 	}
+
+@media only screen and (max-width:1100px) {
+    #picturesAsideWrapper {
+        display: none;
+    }
+
+    #picturesDivWrapper {
+        width: 90%;
+    }
+}

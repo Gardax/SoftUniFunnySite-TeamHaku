@@ -44,4 +44,18 @@ function attachEvents() {
         $("#openBloopers").addClass("selectedItem");
         $("main").load("bloopers.html");
     });
+
+    $("#openPictures").on("click", function () {
+        $("nav li").removeClass("selectedItem");
+        $("#openPictures").addClass("selectedItem");
+        $("main").load("pictures.html");
+    });
+
+    $("#openWords").on("click", function () {
+        $("nav li").removeClass("selectedItem");
+        $("#openWords").addClass("selectedItem");
+        $("main").load("words.html");
+    });
+
+
 }
