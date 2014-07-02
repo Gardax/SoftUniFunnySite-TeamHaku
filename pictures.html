@@ -2,47 +2,249 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>SoftUni Bloopers... The party is ON!</title>
-	<script src="scripts/libs/jquery-2.1.1.min.js"></script>
-	<script src="scripts/JustifiedGallery/dist/js/jquery.justifiedGallery.js"></script>
-	<link rel="stylesheet" href="styles/pictures.css">
+    <meta charset="UTF-8">
+    <title>Pictures</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/libs/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="JustifiedGallery/dist/css/justifiedGallery.css">
+    <script src="JustifiedGallery/dist/js/jquery.justifiedGallery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#picturesDiv").justifiedGallery();
+            });
+        </script>
+
+    <link rel="stylesheet" href="fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
+        </script>
 </head>
 
 <body>
-	<div id="wrapper">
-        <div id="siteBody">
-            <header>
-                <img src="images/Layout Design/Header/Header_background.png"/>
-                <img src="images/Layout Design/Header/Logo_with_text.png" id="logo"/>
-                <nav>
-                    <ul>
-                        <li><a href="pictures.html">Pictures</a></li>
-                        <li>Videos</li>
-                        <li>Words</li>
-                        <li>Music</li>
-                        <li><a href="bloopers.html">Bloopers</a></li>
-                    </ul>
-                </nav>
-                <div class="clear"></div>
-            </header>
-            <main>
-                <section>
-                    <div id="gallery">
-                    	
-                    </div>
-                </section>
-                <aside>
-                	<div>
-                		Popular pictures
-                	</div>
-                </aside>
-            </main>
-            <footer>
-                <img src="images/Layout Design/Footer/Footer_background.png">
-            </footer>
-        </div>
-    </div>
-</body>
+    <div id="picturesDivWrapper">
+        <div id="picturesDivHeader">Pictures</div>
+        <div id="picturesDiv">
+            <a class="fancybox" rel="group" href="images/original/algorithm_original.jpg" title="Algorithm">
+                <img alt="Algorithm" src="images/thumbnails/algorithm_t.jpg"/>
+            </a>
 
+            <a class="fancybox" rel="group" href="images/original/brace_original.jpg" title="Two types of programmers">
+                <img alt="Two types of programmers" src="images/thumbnails/brace_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/brokenCode_original.jpg" title="Broken code">
+                <img alt="Broken code" src="images/thumbnails/brokenCode_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/class_original.jpg" title="Computer class">
+                <img alt="Computer class" src="images/thumbnails/class_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/code_original.jpg" title="Working code">
+                <img alt="Working code" src="images/thumbnails/code_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/compiled_original.jpg" title="Compiled code">
+                <img alt="Compiled code" src="images/thumbnails/compiled_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/cookie_original.jpg" title="Cookie stealing">
+                <img alt="Cookie stealing" src="images/thumbnails/cookie_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/css_original.jpg" title="CSS is awesome">
+                <img alt="CSS is awesome" src="images/thumbnails/css_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/firstTime_original.jpg" title="Novice vs. Experienced">
+                <img alt="Novice vs. Experienced" src="images/thumbnails/firstTime_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/ivan_original.jpg" title="Bay Ivan - the programmer">
+                <img alt="Bay Ivan - the programmer" src="images/thumbnails/ivan_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/NSA_original.jpg" title="NSA">
+                <img alt="NSA" src="images/thumbnails/NSA_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/outernet_original.jpg" title="Outernet">
+                <img alt="Outernet" src="images/thumbnails/outernet_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/party_original.jpg" title="Programmers party">
+                <img alt="Programmers party" src="images/thumbnails/party_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/potato_original.jpg" title="Plug in potato">
+                <img alt="Plug in potato" src="images/thumbnails/potato_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/programmers_original.jpg" title="Programmers are..">
+                <img alt="Programmers are.." src="images/thumbnails/programmers_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/progress_original.jpg" title="Programmers scale">
+                <img alt="Programmers scale" src="images/thumbnails/progress_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/replies_original.jpg" title="How a programmer replies..">
+                <img alt="Replies" src="images/thumbnails/replies_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/run_original.jpg" title="Run programmer, run!!">
+                <img alt="Run programmer, run!!" src="images/thumbnails/run_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/talk_original.jpg" title="Talk to me programmer!">
+                <img alt="Talk to me programmer" src="images/thumbnails/talk_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/typing_original.jpg" title="Typing position">
+                <img alt="Typing position" src="images/thumbnails/typing_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/win_original.jpg" title="Can you install Windows?">
+                <img alt="Can you install Windows?" src="images/thumbnails/win_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Andorxor_original.jpg" title="And, or, xor">
+                <img alt="And, or, xor" src="images/thumbnails/Andorxor_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Artistvs.Programmer_original.jpeg" title="Artist vs. Programmer">
+                <img alt="Artist vs. Programmer" src="images/thumbnails/Artistvs.Programmer_t.jpeg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Beingaprogrammer_original.jpg" title="Being a programmer">
+                <img alt="Being a programmer" src="images/thumbnails/Beingaprogrammer_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Bestscript_original.jpg" title="Best script">
+                <img alt="Best script" src="images/thumbnails/Bestscript_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Byte_original.jpg" title="Byte">
+                <img alt="Byte" src="images/thumbnails/Byte_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Caffeineandpizza_original.jpeg" title="Caffeine and pizza">
+                <img alt="Caffeine and pizza" src="images/thumbnails/Caffeineandpizza_t.jpeg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Cprogrammers_original.jpg" title="C++ Programmers">
+                <img alt="C++ Programmers" src="images/thumbnails/Cprogrammers_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Dereferencemypointer_original.png" title="Dereference my pointer">
+                <img alt="Dereference my pointer" src="images/thumbnails/Dereferencemypointer_t.png"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Differences_original.jpg" title="Differences">
+                <img alt="Differences" src="images/thumbnails/Differences_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Handleacustomer_original.jpg" title="How to handle a customer">
+                <img alt="How to handle a customer" src="images/thumbnails/Handleacustomer_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/InternetExplorer_original.jpg" title="IE">
+                <img alt="IE" src="images/thumbnails/InternetExplorer_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/LifeOfAProgrammer_original.jpg" title="Life of a programmer">
+                <img alt="Life of a programmer" src="images/thumbnails/LifeOfAProgrammer_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Nolifeandmoney_original.jpeg" title="No life and no money">
+                <img alt="No life and no money" src="images/thumbnails/Nolifeandmoney_t.jpeg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Problemwiththecode_original.jpg" title="Problem with the code">
+                <img alt="Problem with the code" src="images/thumbnails/Problemwiththecode_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/programmer-vs-hacker_original.jpg" title="Programmer vs. Hacker">
+                <img alt="Programmer vs. Hacker" src="images/thumbnails/programmer-vs-hacker_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Programmingislikesex_original.jpg" title="Programming is like sex">
+                <img alt="Programming is like sex" src="images/thumbnails/Programmingislikesex_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Python_original.png" title="Python">
+                <img alt="Python" src="images/thumbnails/Python_t.png"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Python2_original.png" title="Python joke">
+                <img alt="Python joke" src="images/thumbnails/Python2_t.png"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Stackoverflow_original.jpg" title="Stack overflow">
+                <img alt="Stack overflow" src="images/thumbnails/Stackoverflow_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Understand_original.jpg" title="Do you understand?">
+                <img alt="Do you understand?" src="images/thumbnails/Understand_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/VisualBasic_original.png" title="Visual Basic">
+                <img alt="Visual Basic" src="images/thumbnails/VisualBasic_t.png"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Whyitworks_original.jpg" title="Why it works">
+                <img alt="Why it works" src="images/thumbnails/Whyitworks_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Whydojava-developerswearglasses_original.jpg" title="Why do java-developers wear glasses">
+                <img alt="Why do java-developers wear glasses" src="images/thumbnails/Whydojava-developerswearglasses_t.jpg"/>
+            </a>
+
+            <a class="fancybox" rel="group" href="images/original/Wilderror_original.png" title="Wild error">
+                <img alt="Wild error" src="images/thumbnails/Wilderror_t.png"/>
+            </a>
+        </div>
+        <div id="picturesDivFooter"></div>
+    </div>
+
+    <aside id="picturesAsideWrapper">
+        <div id="picturesAsideHeader">Most popular</div>
+        <div id="picturesAsideContent">
+            <a class="fancybox" rel="group" href="images/original/Bestscript_original.jpg" title="Best script">
+                <img alt="Best script" src="images/thumbnails/Bestscript_t.jpg"/>
+            </a>
+        </div>
+        <div id="picturesAsideContent">
+            <a class="fancybox" rel="group" href="images/original/brokenCode_original.jpg" title="Broken code">
+                <img alt="Broken code" src="images/thumbnails/brokenCode_t.jpg"/>
+            </a>
+        </div>
+        <div id="picturesAsideContent">
+            <a class="fancybox" rel="group" href="images/original/Caffeineandpizza_original.jpeg" title="Caffeine and pizza">
+                <img alt="Caffeine and pizza" src="images/thumbnails/Caffeineandpizza_t.jpeg"/>
+            </a>
+        </div>
+        <div id="picturesAsideContent">
+            <a class="fancybox" rel="group" href="images/original/Python2_original.png" title="Python joke">
+                <img alt="Python joke" src="images/thumbnails/Python2_t.png"/>
+            </a>
+        </div>
+        <div id="picturesAsideContent">
+            <a class="fancybox" rel="group" href="images/original/Beingaprogrammer_original.jpg" title="Being a programmer">
+                <img alt="Being a programmer" src="images/thumbnails/Beingaprogrammer_t.jpg"/>
+            </a>
+        </div>
+        <div id="picturesAsideContent">
+            <a class="fancybox" rel="group" href="images/original/Artistvs.Programmer_original.jpeg" title="Artist vs. Programmer">
+                <img alt="Artist vs. Programmer" src="images/thumbnails/Artistvs.Programmer_t.jpeg"/>
+            </a>
+        </div>
+    </aside>
+
+</body>
 </html>
