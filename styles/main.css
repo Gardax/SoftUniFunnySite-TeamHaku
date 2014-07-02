@@ -131,6 +131,28 @@ footer {
     footer img {
         width: 100%;
         height: 110px;
+        z-index: 0;
+    }
+
+    footer #socialButtons {
+        position: relative;
+        float: right;
+        top: 94px;
+        right: 9.3%;
+        z-index: 1000;
+    }
+
+    footer #softUniIcon {
+        position:relative;
+        top: -5px;
+        left: 2px;
+
+    }
+
+    footer #socialButtons img {
+        width: 30px;
+        height:auto;
+        margin-left:1px;
     }
 
 .clear {
@@ -142,7 +164,7 @@ footer {
         content: url('../images/Tablet-res/Tablet-res-header.png');
     }
 
-     footer img {
+     footer #backgroundFooter {
         content: url('../images/Tablet-res/Tablet-res-footer.png');
     }
     header #logo {
@@ -167,7 +189,7 @@ footer {
         content: url('../images/Mobile-res/Mobile-res-header.png');
     }
 
-    footer img {
+    footer #backgroundFooter {
         content: url('../images/Mobile-res/Mobile-res-footer.png');
     }
     header #logo {
@@ -379,6 +401,12 @@ a {
     float: left;
 }
 
+#musicSection .text p{
+    width: 95%;
+    float: left;
+    max-width: none;
+}
+
 #musicSection #prevButton button{
     position: relative;
     top: 90px;
@@ -396,6 +424,8 @@ a {
     border: 0px;
     float: right;
 }
+
+
 
 #videosSection {
     margin-top: 40px;
@@ -559,12 +589,18 @@ a {
 #words{
     height: auto;
     padding: 30px;
+     width: 95%;
+    max-width: 600px;
 }
 
 #words img{
     width: 100%;
-    max-width: 400px;
-    
+    max-width: 600px;
+}
+
+#words h3{
+    width: 100%;
+    max-width: 600px;
 }
 
 /*empty by request - Valentin*/
@@ -573,7 +609,9 @@ a {
     height: 20px;   
 }
 
-#aside-words{
-    margin-top: 20px;
-    background-color: #FFF;
+/*new*/
+
+#wordsContainer aside img{
+    width: 200px; 
+    margin-top: 10px;
 }
