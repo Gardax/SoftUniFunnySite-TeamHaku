@@ -1,0 +1,95 @@
+<section>
+    <div id="musicSection">
+        <div class="title">
+            <h1>Music</h1>
+        </div>
+        <div id="prevButton"><button>Previous</button></div>
+        <div id="content">
+            <div class="item">
+                <div>
+                    <img class="image" src="http://cdn3.ukf.com/wp-content/uploads/2014/05/summer-sun1.jpg">
+                    <div class="text">
+                        <h1>UKF TOP 10 Summer</h1>
+                        <p>Our journey into the sunny season continue...</p>
+                        <p>Last week we officially blew the kick-off whistle on summer with our drum &amp; bass top 10. With D&amp;B there's no denying what constitutes a summer vibe.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="image" src="images/FMI.jpg">
+                <div class="text">
+                    <h1>Fatality Brain Exchange!!!</h1>
+                    <p>NO COMMENT</p>
+                    <p>THE BEST OF THE BEST</p>
+
+                </div>
+            </div>
+        </div>
+        <div id="nextButton"><button>Next</button></div>
+        <div class="clear"></div>
+    </div>
+    <div id="videosSection">
+        <div class="title">
+            <h1>Videos</h1>
+        </div>
+        <div id="left-video">
+            <p>How to programming-troll like a boss :D</p>
+            <iframe width="290" height="200" src="//www.youtube.com/embed/lZYNJfIjnOc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="center-right-video">
+            <p class="video-description">Developers Developers Developers</p>
+            <iframe width="290" height="200" src="//www.youtube.com/embed/TmxIRKxZm6o" frameborder="0" allowfullscreen class="embeded"></iframe>
+        </div>
+        <div class="center-right-video">
+            <p>Programmer's life.. :D</p>
+            <iframe width="290" height="200" src="//www.youtube.com/embed/_Nua3Cjdik0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<aside id="best-videos">
+    <p>Best dev videos :)</p>
+    <iframe width="240" height="160" src="//www.youtube.com/embed/6CTyb89iRLw" frameborder="0" allowfullscreen class="aside-videos"></iframe>
+    <iframe width="240" height="160" src="//www.youtube.com/embed/TmxIRKxZm6o" frameborder="0" allowfullscreen class="aside-videos"></iframe>
+    <iframe width="240" height="160" src="//www.youtube.com/embed/b-Cr0EWwaTk" frameborder="0" allowfullscreen class="aside-videos"></iframe>
+</aside>
+<div class="clear"></div>
+
+<script>
+    var index = 0;
+
+    var sliderItems = $(".item");
+    function next() {
+        index++;
+        if (index >= sliderItems.length) {
+            index = 0;
+        }
+        sliderItems.hide();
+        var nextItem = $(sliderItems[index]);
+        nextItem.show();
+    }
+
+    function prev() {
+        index--;
+        if (index < 0) {
+            index = sliderItems.length - 1;
+        }
+        sliderItems.hide();
+        var nextItem = $(sliderItems[index]);
+        nextItem.show();
+    }
+
+    $("#nextButton").click(function () {
+        next();
+    })
+
+    $("#prevButton").click(function () {
+        prev();
+    })
+
+    next();
+    var myTimer = setInterval(function () {
+        next();
+    }, 10000);
+</script>
