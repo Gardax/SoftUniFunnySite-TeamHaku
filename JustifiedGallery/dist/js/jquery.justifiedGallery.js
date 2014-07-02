@@ -26,7 +26,7 @@
 			rowHeight : 100,
 			maxRowHeight : 0, //negative value = no limits, 0 = 1.5 * rowHeight
 			margins : 1,
-			lastRow : 'hide', // or can be 'justify' or 'nojustify'
+			lastRow : 'nojustify', // or can be 'justify' or 'hide'
 			justifyThreshold: 0.35, // if available space / row width <= 0.35 it will be always justified 
 															// (lastRow setting is not considered)
 			cssAnimation: false,
@@ -39,7 +39,7 @@
 			target : null, //rewrite the target of all links
 			extension : /\.[^.]+$/,
 			refreshTime : 250,
-			randomize : true
+			randomize : false
 		};
 
 		function getSuffix(width, height, context) {
